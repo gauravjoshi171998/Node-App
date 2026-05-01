@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     res.send('Hello World')
 })
 
-app.use('/person', localAuthMiddleware, personRoutes)
+app.use('/person', personRoutes)
 app.use('/menuItems', menuItemsRoutes)
 
 
